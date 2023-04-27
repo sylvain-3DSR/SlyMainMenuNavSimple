@@ -1,4 +1,4 @@
-package com.sr.slymainmenunavsimple.view
+package com.sr.slymainmenunavsimple.view.page3
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -9,16 +9,15 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 
-
 @Composable
-fun Page3Screen() {
+fun Page3ProfileScreen(){
     Column(
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ) {
         Text(
-            text = "Page 3",
+            text = "Page 3 Profile",
             textAlign = TextAlign.Center
         )
     }

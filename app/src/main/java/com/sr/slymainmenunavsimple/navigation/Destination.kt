@@ -8,4 +8,8 @@ sealed class Destination(val route: String) {
     object Page2Profile: Destination(route = "page_2_profile")
     object Page2Search: Destination(route = "page_2_search")
     object Page3: Destination(route = "page_3")
+
+    object Page3Home: Destination(route = "page_3_home")
+    object Page3Profile: Destination(route = "page_3_profile")
+    object Page3Search: Destination(route = "page_3_search")
 }

@@ -1,5 +1,6 @@
 package com.sr.slymainmenunavsimple.view
 
+import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Scaffold
 import androidx.compose.material.rememberScaffoldState
@@ -11,6 +12,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.sr.slymainmenunavsimple.navigation.Destination
 import com.sr.slymainmenunavsimple.navigation.Page2BottomNav
+import com.sr.slymainmenunavsimple.navigation.Page2Navigation
 
 @Composable
 fun Page2Screen(){
@@ -20,6 +22,7 @@ fun Page2Screen(){
 
 }
 
+@SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
 fun Page2Scaffold(navController: NavHostController) {
 
@@ -31,18 +34,8 @@ fun Page2Scaffold(navController: NavHostController) {
         bottomBar = {
             Page2BottomNav(navController = navController)
         }
-    ) {paddingValues ->
-        NavHost(navController = navController, startDestination = Destination.Page2Home.route, modifier = Modifier.padding(paddingValues)) {
-            composable(Destination.Page2Home.route) {
-                Page2HomeScreen()
-            }
-            composable(Destination.Page2Profile.route) {
-                Page2ProfileScreen()
-            }
-            composable(Destination.Page2Search.route) {
-                Page2SearchScreen()
-            }
-        }
+    ) {
+        Page2Navigation(navController = navController)
     }
 
 

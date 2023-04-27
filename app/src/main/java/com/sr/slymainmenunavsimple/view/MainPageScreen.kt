@@ -34,7 +34,7 @@ fun MainPageScreen(navController: NavController) {
             shape = RoundedCornerShape(roundCorner)
 
         ) {
-            Text("Button 1")
+            Text("Simple Page")
         }
         Spacer(modifier = Modifier.height(8.dp))
 
@@ -43,7 +43,7 @@ fun MainPageScreen(navController: NavController) {
             onClick = { navController.navigate(Destination.Page2.route) },
             shape = RoundedCornerShape(roundCorner)
         ) {
-            Text("Bottom Navigation Material1")
+            Text("Bottom Navigation Material 1")
         }
 
         Spacer(modifier = Modifier.height(8.dp))
@@ -53,7 +53,19 @@ fun MainPageScreen(navController: NavController) {
             onClick = { navController.navigate(Destination.Page3.route) },
             shape = RoundedCornerShape(roundCorner)
         ) {
-            Text("Button 3")
+            Text("Bottom Navigation Material 3")
         }
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        Button(
+            modifier = Modifier.fillMaxWidth().height(buttonHeight),
+            onClick = {  },
+            shape = RoundedCornerShape(roundCorner)
+        ) {
+            Text("Button 4")
+        }
+
+
     }
 }
