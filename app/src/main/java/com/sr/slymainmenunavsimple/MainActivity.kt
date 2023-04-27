@@ -7,7 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import com.sr.slymainmenunavsimple.navigation.AppNavigation
+import com.sr.slymainmenunavsimple.navigation.AppMainNavigation
 import com.sr.slymainmenunavsimple.ui.theme.SlyMainMenuNavSimpleTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    AppNavigation()
+                    AppMainNavigation()
                 }
             }
         }
