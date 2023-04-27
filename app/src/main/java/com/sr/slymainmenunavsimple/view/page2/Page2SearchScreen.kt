@@ -19,8 +19,9 @@ fun Page2SearchScreen() {
         verticalArrangement = Arrangement.Center,
     ) {
         Text(
-            text = "Page 3 Search",
-            textAlign = TextAlign.Center
+            text = "Page 2 Search",
+            textAlign = TextAlign.Center,
+
         )
     }
 }
